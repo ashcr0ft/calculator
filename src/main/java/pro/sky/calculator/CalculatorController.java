@@ -8,9 +8,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/calculator")
 public class CalculatorController {
-    private final CalculatorService calculatorService;
+    private final CalculatorInterface calculatorService;
 
-    public CalculatorController(CalculatorService calculatorService) {
+    public CalculatorController(CalculatorInterface calculatorService) {
         this.calculatorService = calculatorService;
     }
 
